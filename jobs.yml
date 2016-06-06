@@ -2,10 +2,10 @@ jobs:
   - name: job1
     type: manifest
     steps:
-      - GET apiImage
+      - GET busybox
 
   - name: job2
     type: manifest
     steps:
-      - GET apiImage
-      - PUT wwwImage
+      - GET nginx
+      - PUT busybox

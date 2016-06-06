@@ -1,21 +1,23 @@
 resources:
-  - name: apiImage
+  - name: nginx
     type: image
     integration: aye-docker #your account integration
     source:
-      name: "shipimg/api"
+      name: "library/nginx"
       isPull: false
+      tag: latest
 
-  - name: wwwImage
+  - name: busybox
     type: image
     integration: aye-docker #your account integration
     source:
-      name: "shipimg/www"
+      name: "library/busybox"
       isPull: true
+      tag: latest
 
   - name: samplePyt
     type: gitRepo
     integration: github
     source:
-      name: "pranaypareek/sample_python" #checks project & syncs [resources|jobs].yml
+      name: "pranaypareek/sample_python" #you should've access to this project (even if it's public)
       branch: master
