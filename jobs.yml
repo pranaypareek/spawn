@@ -1,0 +1,12 @@
+jobs:
+  - name: tempjob1
+    type: manifest
+    steps:
+      - GET resource2
+      - PUT resource2
+
+  - name: tempjob2
+    type: manifest
+    steps:
+      - GET resource2
+      - PUT resource2

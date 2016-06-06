@@ -1,0 +1,21 @@
+resources:
+  - name: apiImage
+    type: image
+    integration: aye-docker
+    source:
+      name: "shipimg/api"
+      isPull: false
+
+  - name: wwwImage
+    type: image
+    integration: aye-docker
+    source:
+      name: "shipimg/www"
+      isPull: true
+
+  - name: samplePyt
+    type: gitRepo
+    integration: github
+    source:
+      name: "aye/sample_python"
+      branch: master
