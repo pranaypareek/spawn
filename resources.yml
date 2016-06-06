@@ -1,14 +1,14 @@
 resources:
   - name: apiImage
     type: image
-    integration: aye-docker
+    integration: aye-docker #your account integration
     source:
       name: "shipimg/api"
       isPull: false
 
   - name: wwwImage
     type: image
-    integration: aye-docker
+    integration: aye-docker #your account integration
     source:
       name: "shipimg/www"
       isPull: true
@@ -17,5 +17,5 @@ resources:
     type: gitRepo
     integration: github
     source:
-      name: "aye/sample_python"
+      name: "pranaypareek/sample_python" #checks project & syncs [resources|jobs].yml
       branch: master

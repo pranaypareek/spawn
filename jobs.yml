@@ -1,12 +1,11 @@
 jobs:
-  - name: tempjob1
+  - name: job1
     type: manifest
     steps:
-      - GET resource2
-      - PUT resource2
+      - GET apiImage
 
-  - name: tempjob2
+  - name: job2
     type: manifest
     steps:
-      - GET resource2
-      - PUT resource2
+      - GET apiImage
+      - PUT wwwImage
