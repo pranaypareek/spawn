@@ -2,10 +2,9 @@ jobs:
   - name: job1
     type: manifest
     steps:
-      - GET busybox
+      - GET nginx
 
   - name: job2
-    type: manifest
+    type: ecsDeploy
     steps:
-      - GET nginx
-      - PUT busybox
+      - GET job1

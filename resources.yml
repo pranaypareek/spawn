@@ -7,17 +7,11 @@ resources:
       isPull: false
       tag: latest
 
-  - name: busybox
-    type: image
-    integration: docker-int 
+  - name: default
+    type: ecsCluster
+    integration: siddarthan
     source:
-      name: "library/busybox"
-      isPull: true
-      tag: latest
+     name : "default"
+     region: "us-east-1"
 
-  - name: testapp
-    type: gitRepo
-    integration: github
-    source:
-      name: "spsiddarthan/ask-her-out" 
-      branch: master
+ 
