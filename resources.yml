@@ -1,7 +1,7 @@
 resources:
   - name: nginx
     type: image
-    integration: siddarthan 
+    integration: docker-int 
     source:
       name: "library/nginx"
       isPull: false
@@ -9,13 +9,13 @@ resources:
 
   - name: busybox
     type: image
-    integration: siddarthan 
+    integration: docker-int 
     source:
       name: "library/busybox"
       isPull: true
       tag: latest
 
-  - name: samplePyt
+  - name: testapp
     type: gitRepo
     integration: github
     source:
