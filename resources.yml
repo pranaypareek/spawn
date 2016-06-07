@@ -1,7 +1,7 @@
 resources:
   - name: nginx
     type: image
-    integration: siddarthan #your account integration
+    integration: siddarthan 
     source:
       name: "library/nginx"
       isPull: false
@@ -9,7 +9,7 @@ resources:
 
   - name: busybox
     type: image
-    integration: siddarthan #your account integration
+    integration: siddarthan 
     source:
       name: "library/busybox"
       isPull: true
