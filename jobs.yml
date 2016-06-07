@@ -3,9 +3,3 @@ jobs:
     type: manifest
     steps:
       - GET busybox
-
-  - name: job2
-    type: manifest
-    steps:
-      - GET nginx
-      - PUT busybox
