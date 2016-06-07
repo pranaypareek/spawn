@@ -8,3 +8,4 @@ jobs:
     type: ecsDeploy
     steps:
       - GET job2345678
+      - GET: default
