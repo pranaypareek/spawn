@@ -2,7 +2,7 @@ jobs:
   - name: job2345
     type: manifest
     steps:
-      - GET nginx
+      - GET myimage1
 
   - name: job324
     type: ecsDeploy
