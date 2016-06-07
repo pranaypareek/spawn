@@ -3,7 +3,7 @@ resources:
     type: image
     integration: docker-int 
     source:
-      name: "ubuntu"
+      name: "siddarthan/centos-node-hello"
       isPull: false
       tag: latest
 
