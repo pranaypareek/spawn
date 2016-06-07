@@ -1,5 +1,5 @@
 jobs:
-  - name: job234567
+  - name: job2345678
     type: manifest
     steps:
       - GET myimage1
@@ -7,4 +7,4 @@ jobs:
   - name: job324
     type: ecsDeploy
     steps:
-      - GET job234567
+      - GET job2345678
