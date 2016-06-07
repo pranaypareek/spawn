@@ -1,5 +1,5 @@
 jobs:
-  - name: job2
+  - name: job23
     type: manifest
     steps:
       - GET nginx
