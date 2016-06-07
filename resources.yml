@@ -14,10 +14,3 @@ resources:
       name: "library/busybox"
       isPull: true
       tag: latest
-
-  - name: samplePyt
-    type: gitRepo
-    integration: github
-    source:
-      name: "pranaypareek/sample_python" #you should've access to this project (even if it's public)
-      branch: shaData
