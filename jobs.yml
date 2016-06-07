@@ -1,5 +1,5 @@
 jobs:
-  - name: job23
+  - name: job234
     type: manifest
     steps:
       - GET nginx
@@ -7,4 +7,4 @@ jobs:
   - name: job324
     type: ecsDeploy
     steps:
-      - GET job23
+      - GET job234
