@@ -1,12 +1,4 @@
 resources:
-  - name: nginx
-    type: image
-    integration: pranay-docker #your account integration
-    source:
-      name: "library/nginx"
-      isPull: false
-      tag: latest
-
   - name: busybox
     type: image
     integration: pranay-docker #your account integration
