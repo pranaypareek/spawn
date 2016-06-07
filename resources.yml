@@ -3,7 +3,7 @@ resources:
     type: image
     integration: docker-int 
     source:
-      name: "library/nginx"
+      name: "nginx"
       isPull: false
       tag: latest
 
