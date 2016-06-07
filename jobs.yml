@@ -1,5 +1,11 @@
 jobs:
-  - name: job1
+  - name: generate-manifest
     type: manifest
     steps:
-      - GET busybox
+      - GET nginx-image
+
+  - name: deploy-service
+    type: ecsDeploy
+    steps:
+      - GET generate-manifest
+      - GET myEcsCluster

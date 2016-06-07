@@ -1,8 +1,15 @@
 resources:
-  - name: busybox
+  - name: nginx-image
     type: image
-    integration: pranay-docker #your account integration
+    integration: pranay-docker
     source:
-      name: "library/busybox"
-      isPull: true
+      name: "library/nginx"
+      isPull: false
       tag: latest
+
+  - name: myEcsCluster
+    type: ecsCluster
+    integration: pranay-ecs
+    source:
+     name : "default" #name of the cluster we are deploying
+     region: "us-west-2"
