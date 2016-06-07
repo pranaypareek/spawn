@@ -1,5 +1,5 @@
 resources:
-  - name: nginx
+  - name: myimage
     type: image
     integration: docker-int 
     source:
