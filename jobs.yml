@@ -4,7 +4,7 @@ jobs:
     steps:
       - GET nginx
 
-  - name: job3
+  - name: job32
     type: ecsDeploy
     steps:
       - GET job1
